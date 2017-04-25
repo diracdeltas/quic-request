@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "Test whether QUIC is bypassing webRequest filters",
   "permissions": [
-    "webRequest", "*://*.doubleclick.net/*"
+    "webRequest", "webRequestBlocking", "*://*.doubleclick.net/*"
   ],
   "background": {
     "scripts": ["main.js"]

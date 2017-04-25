@@ -10,6 +10,6 @@ const filter = {
   ]
 }
 
-chrome.webRequest.onBeforeRequest.addListener(cb, filter)
+chrome.webRequest.onBeforeRequest.addListener(cb, filter, ['blocking'])
 
 console.log('Browse YouTube and open chrome://net-internals/#events&q=type:QUIC_SESSION to see what QUIC requests are occurring. You should not see any doubleclick connections.')
